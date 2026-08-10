@@ -1,0 +1,11 @@
+book_ID,ID,number,createdAt,createdBy,modifiedAt,modifiedBy
+7516896e-3308-4ab1-b8d5-4b70069e9d73,16553564-1f39-4e18-910b-c4aeaa47b575,45,2016-01-16T00:00:00.000Z,createdBy.9ust8@example.net,2021-02-24T00:00:00.000Z,modifiedBy.9ust8@example.org
+7516896e-3308-4ab1-b8d5-4b70069e9d73,16553565-210a-40e8-9ee3-551dcfbfaf09,61,2011-12-04T00:00:00.000Z,createdBy.9ust9@example.net,2014-09-15T00:00:00.000Z,modifiedBy.9ust9@example.org
+75169024-dac0-4513-9af1-711c22711abb,19339052-2a53-4314-987d-6af3e41430b8,79,2019-05-09T00:00:00.000Z,createdBy.bii3w@example.com,2003-08-17T00:00:00.000Z,modifiedBy.bii3w@example.net
+75169024-dac0-4513-9af1-711c22711abb,19339053-0280-4c00-86cc-dd63e21ffa55,32,2008-12-29T00:00:00.000Z,createdBy.bii3x@example.net,2004-12-24T00:00:00.000Z,modifiedBy.bii3x@example.net
+75169177-96ed-4705-b443-caf1ca40dc28,25949557-b5f0-4e81-8ef1-0714b8db98cd,56,2005-09-05T00:00:00.000Z,createdBy.fg6t1@example.net,2017-02-15T00:00:00.000Z,modifiedBy.fg6t1@example.net
+75169177-96ed-4705-b443-caf1ca40dc28,25949558-d5a2-4376-bb92-bbfee9e4cd27,99,2019-10-05T00:00:00.000Z,createdBy.fg6t2@example.net,2008-12-27T00:00:00.000Z,modifiedBy.fg6t2@example.net
+751692cc-13b9-4852-9681-aabc54ba476e,29031003-a08f-40d0-9a8d-4c8b23d9c1a9,34,2014-04-23T00:00:00.000Z,createdBy.ha8gr@example.net,2007-10-11T00:00:00.000Z,modifiedBy.ha8gr@example.net
+751692cc-13b9-4852-9681-aabc54ba476e,29031004-22d8-421f-978a-7a160860ee54,94,2015-08-30T00:00:00.000Z,createdBy.ha8gs@example.net,2001-01-21T00:00:00.000Z,modifiedBy.ha8gs@example.com
+7516937a-5eef-4336-8ec8-471b91cee296,79890263-7702-488e-80da-41710899359d,80,2017-08-31T00:00:00.000Z,createdBy.4r8de@example.net,2014-07-12T00:00:00.000Z,modifiedBy.4r8de@example.net
+7516937a-5eef-4336-8ec8-471b91cee296,79890275-3d7e-41e6-9b31-977a07e05c2a,97,2023-09-27T00:00:00.000Z,createdBy.4r8df@example.net,2004-01-11T00:00:00.000Z,modifiedBy.4r8df@example.org
