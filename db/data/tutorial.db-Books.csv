@@ -1,6 +1,6 @@
-ID,title,author_ID,createdAt,createdBy,modifiedAt,modifiedBy
-7516896e-3308-4ab1-b8d5-4b70069e9d73,title-751689,31136353-95c5-43fb-ae81-fe6da44d4944,2007-12-22T00:00:00.000Z,createdBy.g409@example.net,2004-06-10T00:00:00.000Z,modifiedBy.g409@example.net
-75169024-dac0-4513-9af1-711c22711abb,title-751690,31136353-95c5-43fb-ae81-fe6da44d4944,2011-03-03T00:00:00.000Z,createdBy.g40a@example.com,2007-01-16T00:00:00.000Z,modifiedBy.g40a@example.net
-75169177-96ed-4705-b443-caf1ca40dc28,title-751691,31136353-95c5-43fb-ae81-fe6da44d4944,2017-10-14T00:00:00.000Z,createdBy.g40b@example.com,2014-11-22T00:00:00.000Z,modifiedBy.g40b@example.org
-751692cc-13b9-4852-9681-aabc54ba476e,title-751692,31136353-95c5-43fb-ae81-fe6da44d4944,2011-07-03T00:00:00.000Z,createdBy.g40c@example.com,2014-05-01T00:00:00.000Z,modifiedBy.g40c@example.net
-7516937a-5eef-4336-8ec8-471b91cee296,title-751693,31136353-95c5-43fb-ae81-fe6da44d4944,2006-03-05T00:00:00.000Z,createdBy.g40d@example.org,2013-12-07T00:00:00.000Z,modifiedBy.g40d@example.com
+ID,title,author_ID,genre,publishedAt,pages,price,createdAt,createdBy,modifiedAt,modifiedBy
+94658793-a4d3-4541-b785-96fd93e39b4a,Harry Potter and the Philosopher's Stone,J.K. Rowling,Fantasy,1997-06-26,223,10.99,2020-02-16T00:00:00.000Z,alice.morgan@example.com,2020-08-09T00:00:00.000Z,david.chen@example.com
+9465880f-07c9-478f-b62f-a9919a8103bf,To Kill a Mockingbird,Harper Lee,Fiction,1960-07-11,296,3.95,2009-08-20T00:00:00.000Z,brian.kovacs@example.org,2016-10-08T00:00:00.000Z,emma.schmidt@example.org
+9465881d-11ee-4370-bf9b-5631c46a8d91,1984,George Orwell,Dystopian,1949-06-08,328,2.00,2010-12-09T00:00:00.000Z,carlos.rivera@example.com,2023-02-04T00:00:00.000Z,fatima.yildiz@example.net
+9465882d-fec0-4f41-a1f5-bf63910a0364,Pride and Prejudice,Jane Austen,Romance,1813-01-28,432,0.90,2000-04-09T00:00:00.000Z,gabor.nagy@example.org,2000-05-17T00:00:00.000Z,hanna.kovacs@example.com
+94658833-bea7-42cf-9edf-40931cac813a,The Great Gatsby,F. Scott Fitzgerald,Fiction,1925-04-10,218,2.00,2006-01-02T00:00:00.000Z,irene.balog@example.net,2006-09-08T00:00:00.000Z,janos.toth@example.com
