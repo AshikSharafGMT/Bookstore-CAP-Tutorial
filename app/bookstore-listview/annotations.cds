@@ -71,9 +71,21 @@ annotate service.Books with @(
             Value : author_ID,
             Label : 'Author',
         },
+        {
+            $Type : 'UI.DataField',
+            Value : stock,
+            Label : 'Stock',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : Status_code,
+            Label : 'Status',
+            Criticality : Status.criticality,
+        },
     ],
     UI.SelectionFields : [
         price,
+        Status.code,
     ],
     UI.HeaderInfo : {
         Title : {
@@ -106,6 +118,25 @@ annotate service.Books with @(
             {
                 $Type : 'UI.DataField',
                 Value : modifiedBy,
+            },
+        ],
+    },
+    UI.HeaderFacets : [
+        {
+            $Type : 'UI.ReferenceFacet',
+            Label : 'Availability',
+            ID : 'Header',
+            Target : '@UI.FieldGroup#Header',
+        },
+    ],
+    UI.FieldGroup #Header : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : Status.code,
+                Criticality : Status.criticality,
+                CriticalityRepresentation : #WithIcon,
             },
         ],
     },
@@ -152,4 +183,31 @@ annotate service.Chapters with @(
         },
     ]
 );
+
+annotate service.Books with {
+    Status @(
+        Common.Text : Status.displayText,
+        Common.Text.@UI.TextArrangement : #TextOnly,
+    )
+};
+
+annotate service.BookStatus with {
+    code @(
+        Common.Label : 'Status',
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'BookStatus',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : code,
+                    ValueListProperty : 'code',
+                },
+            ],
+        },
+        Common.ValueListWithFixedValues : true,
+        Common.Text : displayText,
+        Common.Text.@UI.TextArrangement : #TextOnly,
+    )
+};
 

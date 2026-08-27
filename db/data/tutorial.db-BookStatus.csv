@@ -1,0 +1,4 @@
+code,ID,criticality,displayText,createdAt,createdBy,modifiedAt,modifiedBy
+L,19977219-3cb9-484e-8194-d89dff93f173,2,Low Stock,2022-07-21T23:00:00.000Z,createdBy.bw6ir@example.org,2010-01-23T23:00:00.000Z,modifiedBy.bw6ir@example.net
+U,19977221-3626-4a8c-a558-073a05897737,1,Unavailable,2005-01-01T23:00:00.000Z,createdBy.bw6it@example.net,2006-09-19T23:00:00.000Z,modifiedBy.bw6it@example.org
+A,19977222-24cd-4dcf-a610-ab3cf08e4b93,3,Available,2014-10-09T23:00:00.000Z,createdBy.bw6iu@example.org,2003-05-16T23:00:00.000Z,modifiedBy.bw6iu@example.org

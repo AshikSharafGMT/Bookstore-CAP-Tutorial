@@ -1,6 +1,6 @@
-ID,title,author_ID,genre,publishedAt,pages,price,createdAt,createdBy,modifiedAt,modifiedBy
-94658793-a4d3-4541-b785-96fd93e39b4a,Harry Potter and the Philosopher's Stone,J.K. Rowling,Fantasy,1997-06-26,223,10.99,2020-02-16T00:00:00.000Z,alice.morgan@example.com,2020-08-09T00:00:00.000Z,david.chen@example.com
-9465880f-07c9-478f-b62f-a9919a8103bf,To Kill a Mockingbird,Harper Lee,Fiction,1960-07-11,296,3.95,2009-08-20T00:00:00.000Z,brian.kovacs@example.org,2016-10-08T00:00:00.000Z,emma.schmidt@example.org
-9465881d-11ee-4370-bf9b-5631c46a8d91,1984,George Orwell,Dystopian,1949-06-08,328,2.00,2010-12-09T00:00:00.000Z,carlos.rivera@example.com,2023-02-04T00:00:00.000Z,fatima.yildiz@example.net
-9465882d-fec0-4f41-a1f5-bf63910a0364,Pride and Prejudice,Jane Austen,Romance,1813-01-28,432,0.90,2000-04-09T00:00:00.000Z,gabor.nagy@example.org,2000-05-17T00:00:00.000Z,hanna.kovacs@example.com
-94658833-bea7-42cf-9edf-40931cac813a,The Great Gatsby,F. Scott Fitzgerald,Fiction,1925-04-10,218,2.00,2006-01-02T00:00:00.000Z,irene.balog@example.net,2006-09-08T00:00:00.000Z,janos.toth@example.com
+ID,title,author_ID,genre,publishedAt,pages,price,stock,Status_ID,Status_code,createdAt,createdBy,modifiedAt,modifiedBy
+94658793-a4d3-4541-b785-96fd93e39b4a,Harry Potter and the Philosopher's Stone,J.K. Rowling,Fantasy,1997-06-26,223,10.99,25,19977222-24cd-4dcf-a610-ab3cf08e4b93,A,2020-02-16T00:00:00.000Z,alice.morgan@example.com,2020-08-09T00:00:00.000Z,david.chen@example.com
+9465880f-07c9-478f-b62f-a9919a8103bf,To Kill a Mockingbird,Harper Lee,Fiction,1960-07-11,296,3.95,6,19977219-3cb9-484e-8194-d89dff93f173,L,2009-08-20T00:00:00.000Z,brian.kovacs@example.org,2016-10-08T00:00:00.000Z,emma.schmidt@example.org
+9465881d-11ee-4370-bf9b-5631c46a8d91,1984,George Orwell,Dystopian,1949-06-08,328,2.00,0,19977221-3626-4a8c-a558-073a05897737,U,2010-12-09T00:00:00.000Z,carlos.rivera@example.com,2023-02-04T00:00:00.000Z,fatima.yildiz@example.net
+9465882d-fec0-4f41-a1f5-bf63910a0364,Pride and Prejudice,Jane Austen,Romance,1813-01-28,432,0.90,35,19977222-24cd-4dcf-a610-ab3cf08e4b93,A,2000-04-09T00:00:00.000Z,gabor.nagy@example.org,2000-05-17T00:00:00.000Z,hanna.kovacs@example.com
+94658833-bea7-42cf-9edf-40931cac813a,The Great Gatsby,F. Scott Fitzgerald,Fiction,1925-04-10,218,2.00,2,19977219-3cb9-484e-8194-d89dff93f173,L,2006-01-02T00:00:00.000Z,irene.balog@example.net,2006-09-08T00:00:00.000Z,janos.toth@example.com
