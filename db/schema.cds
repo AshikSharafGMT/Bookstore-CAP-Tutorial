@@ -9,7 +9,7 @@ namespace tutorial.db;
 entity Books : cuid, managed {
     title       : String;
     author      : Association to Authors;
-    genre       : String;
+    genre       : Association to Genres;
     publishedAt : Date;
     pages       : Integer;
     price       : Decimal(9, 2);
@@ -20,7 +20,25 @@ entity Books : cuid, managed {
                       on Chapters.book = $self;
 }
 
-entity BookStatus : cuid,managed {
+entity Genres {
+    key code        : Genre;
+        description : String;
+
+}
+
+type Genre          : String enum {
+    Fiction = 'Fiction';
+    Science = 'Science';
+    Cooking = 'Cooking';
+    Fantasy = 'Fantasy';
+    Hobby = 'Hobby';
+    Adventure = 'Adventure';
+    NonFiction = 'Non-Fiction';
+    Art = 'Art';
+};
+
+
+entity BookStatus : cuid, managed {
     key code        : BookStatusCode;
         criticality : Integer;
         displayText : String;
