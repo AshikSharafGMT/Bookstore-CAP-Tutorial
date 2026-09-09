@@ -1,4 +1,4 @@
-const cds = require('@sap/cds')
+const cds = require('@sap/cds') 
 
 
 module.exports = class BookstoreService extends cds.ApplicationService {
