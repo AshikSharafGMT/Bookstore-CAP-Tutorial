@@ -4,7 +4,7 @@ import { Books } from '#cds-models/BookstoreService'
 
 export default class BookstoreService extends cds.ApplicationService {
   init() {
-//Add stock by 1
+    //Add stock by 1
     this.on('addStock', Books, async (req) => {
       const bookId = req.params[0].ID
       console.log(bookId)
@@ -14,7 +14,12 @@ export default class BookstoreService extends cds.ApplicationService {
         .where({ ID: bookId })
     })
 
-//Change Publish Date
+    //10% Discount
+    this.on('addDiscount', async () => {
+      await UPDATE(Books).set({ price: { func: 'ROUND', args: [{ xpr: [{ ref: ['price'] }, '*', { val: 0.9 }] }] } })
+    })
+
+    //Change Publish Date
     this.on('changePublishDate', Books, async (req) => {
       const bookId = req.params[0].ID
       const newDateInput = req.data.newDate
@@ -23,14 +28,15 @@ export default class BookstoreService extends cds.ApplicationService {
         .set({ publishedAt: newDateInput })
         .where({ ID: bookId })
     })
-//Change Status
-this.on('changeStatus', Books, async (req) => {
+
+    //Change Status
+    this.on('changeStatus', Books, async (req) => {
       const bookId = req.params[0].ID
       const newStatus = req.data.newStatus
       const newStatusID = req.data.newStatusID
 
       await UPDATE(Books)
-        .set({ Status_ID: newStatusID , Status_code: newStatus })
+        .set({ Status_ID: newStatusID, Status_code: newStatus })
         .where({ ID: bookId })
     })
 
@@ -41,7 +47,7 @@ this.on('changeStatus', Books, async (req) => {
     this.on('READ', Book, async (req, next) => {
       return next()
     })
-// offer 20% discount for fiction
+    // offer 20% discount for fiction
     this.after('READ', Book, (result, req) => {
       const books = Array.isArray(result) ? result : [result]
 
