@@ -4,7 +4,7 @@ import { Books } from '#cds-models/BookstoreService'
 
 export default class BookstoreService extends cds.ApplicationService {
   init() {
-
+//Add stock by 1
     this.on('addStock', Books, async (req) => {
       const bookId = req.params[0].ID
       console.log(bookId)
@@ -34,9 +34,6 @@ this.on('changeStatus', Books, async (req) => {
         .where({ ID: bookId })
     })
 
-
-
-
     this.before(['READ'], Book, async (req) => {
       console.log('Before READ Books')
     })
@@ -44,7 +41,7 @@ this.on('changeStatus', Books, async (req) => {
     this.on('READ', Book, async (req, next) => {
       return next()
     })
-
+// offer 20% discount for fiction
     this.after('READ', Book, (result, req) => {
       const books = Array.isArray(result) ? result : [result]
 
