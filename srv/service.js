@@ -1,6 +1,9 @@
 import cds from '@sap/cds'
 import { Book } from '#cds-models/BookstoreService'
 import { Books } from '#cds-models/BookstoreService'
+import { Authors } from '#cds-models/BookstoreService'
+
+//const { Books, Authors } = require('#cds-models/BookstoreService')
 
 export default class BookstoreService extends cds.ApplicationService {
   init() {
@@ -47,6 +50,8 @@ export default class BookstoreService extends cds.ApplicationService {
     this.on('READ', Book, async (req, next) => {
       return next()
     })
+
+
     // offer 20% discount for fiction
     this.after('READ', Book, (result, req) => {
       const books = Array.isArray(result) ? result : [result]
@@ -56,6 +61,13 @@ export default class BookstoreService extends cds.ApplicationService {
           book.price = book.price * 0.8
         }
       }
+    })
+
+    this.after('READ', Authors, async (authors) => {
+      for (const author of authors) {
+        author.bookCount = 1
+      }
+
     })
 
     return super.init()
